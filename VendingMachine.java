@@ -12,6 +12,11 @@ public class VendingMachine {
     shop.put("Celsius", 4.25);
     shop.put("Maltesers", 6.90);
 
+    //Welcomes user and gives instructions
+    System.out.println("Welcome to the Vending Machine! You may chose between Oreos, Popcorn, Celsius, Maltesers");
+    Scanner input = new Scanner(System.in);
+    String choice = input.nextLine();
+    
     
 
     }
