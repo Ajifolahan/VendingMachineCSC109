@@ -30,10 +30,20 @@ public class VendingMachine {
                 amount = scanner.nextInt();
                 count += 1;
             }
-    
         }
-
-    } else if (choice.equalsIgnoreCase("Popcorn")) {
+System.out.println("Please confirm that you would like to proceed with this transaction.  Please enter Yes/No. \n1.Yes \n2.No");
+scanner.nextLine();
+String response = scanner.nextLine();
+if (response.equalsIgnoreCase("Yes")) {
+    double change = count - shop.get("Oreos");
+    System.out.println("Thanks for your ordering Oreos with us!  Your change is $" + change + ". We hope to see you again");  
+} else {
+    System.out.println("Transaction cancelled.  Have your refund of $" + count);
+}
+    } 
+    
+    
+    else if (choice.equalsIgnoreCase("Popcorn")) {
         int amount = scanner.nextInt();
         int count = 1;
         while (count != 5) {
@@ -45,6 +55,15 @@ public class VendingMachine {
                 count += 1;
             }
         }
+System.out.println("Please confirm that you would like to proceed with this transaction.  Please enter Yes/No. \n1.Yes \n2.No");
+scanner.nextLine();
+String response = scanner.nextLine();
+if (response.equalsIgnoreCase("Yes")) {
+    double change = count - shop.get("Popcorn");
+    System.out.println("Thanks for your ordering Popcorn with us!  Your change is $" + change + ". We hope to see you again");  
+} else {
+    System.out.println("Transaction cancelled.  Have your refund of $" + count);
+}
     } else if (choice.equalsIgnoreCase("Celsisus")) {
         int amount = scanner.nextInt();
         int count = 1;
@@ -57,6 +76,15 @@ public class VendingMachine {
                 count += 1;
             }
         }
+System.out.println("Please confirm that you would like to proceed with this transaction.  Please enter Yes/No. \n1.Yes \n2.No");
+scanner.nextLine();
+String response = scanner.nextLine();
+if (response.equalsIgnoreCase("Yes")) {
+    double change = count - shop.get("Celsius");
+    System.out.println("Thanks for your ordering Celsius with us!  Your change is $" + change + ". We hope to see you again");  
+} else {
+    System.out.println("Transaction cancelled.  Have your refund of $" + count);
+}
     } else if (choice.equalsIgnoreCase("Maltesers")) {
         int amount = scanner.nextInt();
         int count = 1;
@@ -69,6 +97,15 @@ public class VendingMachine {
                 count += 1;
             }
         }
+        System.out.println("Please confirm that you would like to proceed with this transaction.  Please enter Yes/No. \n1.Yes \n2.No");
+scanner.nextLine();
+String response = scanner.nextLine();
+if (response.equalsIgnoreCase("Yes")) {
+    double change = count - shop.get("Maltesers");
+    System.out.println("Thanks for your ordering Maltesers with us!  Your change is $" + change + ". We hope to see you again");  
+} else {
+    System.out.println("Transaction cancelled.  Have your refund of $" + count);
+}
     }
 
 
