@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class VendingMachine {
     public static void main(String[] args) {
-        // Create a HashMap object called capitalCities
+        // Create a HashMap object
         HashMap<String, Double> shop = new HashMap<String, Double>();
 
-        // Add keys and values (Country, City)
+        // Add keys and values
         shop.put("Oreos", 2.5);
         shop.put("Popcorn", 5.00);
         shop.put("Celsius", 4.25);
